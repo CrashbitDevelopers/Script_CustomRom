@@ -4,8 +4,8 @@
 </p>
 
     $ apt-get install git
-    $ git clone https://github.com/CrashbitDevelopers/Script_LineageOS -b master
-    $ cd Script_LineageOS
+    $ git clone https://github.com/CrashbitDevelopers/Script_CustomRom -b master
+    $ cd Script_CustomRom
     $ ./setup.sh
     $ ./source.sh
 
