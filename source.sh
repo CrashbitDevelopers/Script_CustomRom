@@ -66,10 +66,12 @@ clear
   echo 
   echo "  1 - LineageOS 13"
   echo "  2 - LineageOS 14.1"
-  echo "  3 - OmniROM 6.0.1"
-  echo "  4 - OmniROM 7.1.2"
-  echo "  5 - AOKP 6.0.1"
-  echo "  6 - AOKP 7.1.2"
+  echo "  3 - LineageOS 15"
+  echo "  4 - OmniROM 6.0.1"
+  echo "  5 - OmniROM 7.1.2" 
+  echo "  6 - OmniROM 8.0"
+  echo "  7 - AOKP 6.0.1"
+  echo "  8 - AOKP 7.1.2"
   echo
   echo -n "Ingrese una opción: "
   read opt
@@ -79,10 +81,12 @@ clear
     case $opt in
       1) repo init -u git://github.com/lineageos/android.git -b cm-13.0;;
       2) repo init -u git://github.com/lineageos/android.git -b cm-14.1;;
-      3) repo init -u git://github.com/omnirom/android.git -b android-6.0;;      
-      4) repo init -u git://github.com/omnirom/android.git -b android-7.1;;
-      5) repo init -u git://github.com/AOKP/android.git -b mm;;
-      6) repo init -u git://github.com/AOKP/android.git -b nougat;;
+      3) repo init -u git://github.com/lineageos/android.git -b lineage-15.0;;
+      4) repo init -u git://github.com/omnirom/android.git -b android-6.0;;      
+      5) repo init -u git://github.com/omnirom/android.git -b android-7.1;;
+      6) repo init -u git://github.com/omnirom/android.git -b android-8.0;;
+      7) repo init -u git://github.com/AOKP/platform_manifest.git -b mm;;
+      8) repo init -u git://github.com/AOKP/platform_manifest.git -b nougat;;
       
     esac
   fi
