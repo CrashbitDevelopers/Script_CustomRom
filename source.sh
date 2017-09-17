@@ -72,6 +72,8 @@ clear
   echo "  6 - OmniROM 8.0"
   echo "  7 - AOKP 6.0.1"
   echo "  8 - AOKP 7.1.2"
+  echo "  9 - Paranoid Android Marshmallow"
+  echo "  10 - Paranoid Android Nougat"
   echo
   echo -n "Ingrese una opción: "
   read opt
@@ -87,6 +89,8 @@ clear
       6) repo init -u git://github.com/omnirom/android.git -b android-8.0;;
       7) repo init -u git://github.com/AOKP/platform_manifest.git -b mm;;
       8) repo init -u git://github.com/AOKP/platform_manifest.git -b nougat;;
+      9) repo init -u git://github.com/AOSPA/manifest.git -b marshmallow;;
+      10) repo init -u git://github.com/AOSPA/manifest.git -b nougat-mr2;;
       
     esac
   fi
