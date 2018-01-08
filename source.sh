@@ -64,16 +64,10 @@ clear
   echo " Elige tu versión....."
   echo "============================================================"
   echo 
-  echo "  1 - LineageOS 13"
-  echo "  2 - LineageOS 14.1"
-  echo "  3 - LineageOS 15"
-  echo "  4 - OmniROM 6.0.1"
-  echo "  5 - OmniROM 7.1.2" 
-  echo "  6 - OmniROM 8.0"
-  echo "  7 - AOKP 6.0.1"
-  echo "  8 - AOKP 7.1.2"
-  echo "  9 - Paranoid Android Marshmallow"
-  echo "  10 - Paranoid Android Nougat"
+  echo "  1 - LineageOS 15.1"
+  echo "  2 - OmniROM 8.1"
+  echo "  3 - AOKP Oreo 8.1"
+  echo "  4 - Paranoid Android Oreo 8.1"
   echo
   echo -n "Ingrese una opción: "
   read opt
@@ -81,16 +75,10 @@ clear
   if [ "$?" != "1" ]
   then
     case $opt in
-      1) repo init -u git://github.com/lineageos/android.git -b cm-13.0;;
-      2) repo init -u git://github.com/lineageos/android.git -b cm-14.1;;
-      3) repo init -u git://github.com/lineageos/android.git -b lineage-15.0;;
-      4) repo init -u git://github.com/omnirom/android.git -b android-6.0;;      
-      5) repo init -u git://github.com/omnirom/android.git -b android-7.1;;
-      6) repo init -u git://github.com/omnirom/android.git -b android-8.0;;
-      7) repo init -u git://github.com/AOKP/platform_manifest.git -b mm;;
-      8) repo init -u git://github.com/AOKP/platform_manifest.git -b nougat;;
-      9) repo init -u git://github.com/AOSPA/manifest.git -b marshmallow;;
-      10) repo init -u git://github.com/AOSPA/manifest.git -b nougat-mr2;;
+      1) repo init -u git://github.com/LineageOS/android.git -b staging/lineage-15.1;;
+      2) repo init -u git://github.com/omnirom/android.git -b android-8.1;;
+      3) repo init -u git://github.com/AOKP/platform_manifest.git -b oreo;;
+      4) repo init -u git://github.com/AOSPA/manifest.git -b oreo-mr1;;
       
     esac
   fi
